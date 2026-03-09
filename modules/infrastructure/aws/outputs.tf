@@ -20,3 +20,4 @@ output "ssh_private_key_content" {
   value       = var.create_ssh_key_pair ? tls_private_key.ssh_private_key[0].private_key_openssh : file(local.private_ssh_key_path)
   sensitive   = true
 }
+
